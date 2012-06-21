@@ -19,7 +19,7 @@ class SoundcordRailsGenerator < ActiveRecord::Generators::Base
   protected
 
   def migration_name
-    "add_phonetized_columns_#{attachment_names.join("_")}_to_#{name.underscore.pluralize}"
+    "add_phonetized_columns_#{column_names.join("_")}_to_#{name.underscore.pluralize}"
   end
 
   def migration_file_name
