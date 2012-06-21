@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Lukas Alexandre"]
   s.email       = ["lukeskytm@gmail.com"]
   s.homepage    = "https://github.com/lukasalexandre/soundcord_rails"
-  s.summary     = %q{A SoundCord integration for Rails}
-  s.description = %q{A SoundCord integration for Rails}
+  s.summary     = %q{Phonetic fields as attributes for ActiveRecord}
+  s.description = %q{Easy phonetic comparisons for ActiveRecord}
 
   s.rubyforge_project = "soundcord_rails"
 
