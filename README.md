@@ -10,14 +10,14 @@ SoundCord Rails is distributed as a gem, which is how it should be used is your 
 
 Include the gem in you gemfile.
 
-```ruby
+```
 gem "soundcord_rails"
 ```
 
 Or, if you want to get the latest, you can get master from the main paperclip repository:
 
-```ruby
-gem ""soundcord_rails", :git => "git@github.com:lukasalexandre/soundcord_rails.git"
+```
+gem "soundcord_rails", :git => "git@github.com:lukasalexandre/soundcord_rails.git"
 ```
 
 If you`are trying to use features that don't seem to be in the latest released gem, but are mentioned in the README, then you probably need to specify the master branch if you want to use them. This README is probably ahead of the  latest released version, if you're reading it on GitHub.
