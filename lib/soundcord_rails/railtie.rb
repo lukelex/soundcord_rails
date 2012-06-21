@@ -1,5 +1,4 @@
-require 'paperclip'
-require 'paperclip/schema'
+require 'soundcord_rails'
 
 module SoundCordRails
   require 'rails'
