@@ -9,10 +9,6 @@
 # License:: MIT License (http://www.opensource.org/licenses/mit-license.php)
 
 require "soundcord_rails/version"
-# require 'erb'
-# require 'digest'
-# require 'tempfile'
-# require 'mime/types'
 require 'soundcord'
 
 require 'soundcord_rails/railtie' if defined?(Rails)
@@ -37,9 +33,6 @@ module SoundcordRails
       else
         self.phonetized_definitions = self.phonetized_definitions.dup
       end
-
-      # Paperclip.classes_with_attachments << self.name
-      # Paperclip.check_for_url_clash(name,phonetized_definitions[name][:url],self.name)
 
       define_method "update_#{name}_phonetized" do
         send("#{name}_phonetized=", send(name).phonetize)
