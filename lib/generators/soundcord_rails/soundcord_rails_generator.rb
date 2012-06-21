@@ -6,7 +6,7 @@ class SoundcordRailsGenerator < ActiveRecord::Generators::Base
        "arguments are the name of the columns to be phonetized"
 
   argument :column_names, :required => true, :type => :array, :desc => "The names of the column(s) to phonetize.",
-           :banner => "attachment_one attachment_two attachment_three ..."
+           :banner => "field_one field_two field_three ..."
 
   def self.source_root
     @source_root ||= File.expand_path('../templates', __FILE__)
