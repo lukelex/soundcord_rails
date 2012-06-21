@@ -19,8 +19,6 @@ require 'soundcord_rails/railtie' if defined?(Rails)
 # The base module that gets included in ActiveRecord::Base. See the
 # documentation for SoundcordRails::ClassMethods for more useful information.
 module SoundcordRails
-  extend Helpers
-  extend Logger
 
   module ClassMethods
     # +phonetized+ gives the class, it is called on, an attribute that maps to the phonetized
