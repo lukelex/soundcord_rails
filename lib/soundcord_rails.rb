@@ -42,7 +42,7 @@ module SoundcordRails
       # Paperclip.check_for_url_clash(name,phonetized_definitions[name][:url],self.name)
 
       define_method "update_#{name}_phonetized" do
-        send("#{name}_phonetized", send(name).phonetize)
+        send("#{name}_phonetized=", send(name).phonetize)
       end
 
       before_save "update_#{name}_phonetized"
