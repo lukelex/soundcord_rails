@@ -1,6 +1,6 @@
 require 'rails/generators/active_record'
 
-class SoundCordRailsGenerator < ActiveRecord::Generators::Base
+class SoundcordRailsGenerator < ActiveRecord::Generators::Base
   desc "Create a migration to add soundcord-specific field to your model. " +
        "The NAME argument is the name of your model, and the following " +
        "arguments are the name of the columns to be phonetized"

@@ -1,4 +1,4 @@
-module SoundCordRails
+module SoundcordRails
   module Glue
     def self.included(base)
       base.extend ClassMethods
