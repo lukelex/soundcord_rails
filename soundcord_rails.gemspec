@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{Phonetic fields as attributes for ActiveRecord}
   s.description = %q{Easy phonetic comparisons for ActiveRecord}
 
-  s.rubyforge_project = "soundcord_rails"
+  s.rubyforge_project = "soundcordrails"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
