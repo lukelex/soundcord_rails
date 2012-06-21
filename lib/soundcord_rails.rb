@@ -9,10 +9,11 @@
 # License:: MIT License (http://www.opensource.org/licenses/mit-license.php)
 
 require "soundcord_rails/version"
-require 'erb'
-require 'digest'
-require 'tempfile'
-require 'mime/types'
+# require 'erb'
+# require 'digest'
+# require 'tempfile'
+# require 'mime/types'
+require 'soundcord'
 
 require 'soundcord_rails/railtie' if defined?(Rails)
 
