@@ -1,0 +1,15 @@
+class <%= migration_class_name %> < ActiveRecord::Migration
+  def self.up
+    change_table :<%= table_name %> do |t|
+      <% column_names.each do |column| -%>
+        t.string :<%= column %>_phonetized
+      <% end -%>
+    end
+  end
+
+  def self.down
+    <% column_names.each do |column| -%>
+      remove_column :<%= table_name %>, :<%= column %>
+    <% end -%>
+  end
+end
