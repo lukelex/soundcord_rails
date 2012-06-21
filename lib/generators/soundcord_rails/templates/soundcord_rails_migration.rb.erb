@@ -3,7 +3,7 @@ class <%= migration_class_name %> < ActiveRecord::Migration
     change_table :<%= table_name %> do |t|
   <% column_names.each do |column| -%>
       t.string :<%= column %>_phonetized
-  <% end -%>
+<% end -%>
     end
   end
 
