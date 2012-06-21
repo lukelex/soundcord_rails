@@ -13,10 +13,10 @@ module SoundcordRails
 
   class Railtie
     def self.insert
-      SoundcordRails.options[:logger] = Rails.logger
+      # SoundcordRails.options[:logger] = Rails.logger
 
       if defined?(ActiveRecord)
-        SoundcordRails.options[:logger] = ActiveRecord::Base.logger
+        # SoundcordRails.options[:logger] = ActiveRecord::Base.logger
         ActiveRecord::Base.send(:include, SoundcordRails::Glue)
       end
     end
