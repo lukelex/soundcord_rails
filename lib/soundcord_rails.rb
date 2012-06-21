@@ -30,7 +30,6 @@ module SoundcordRails
     #     phonetized :name
     #   end
     def phonetized(name)
-      include InstanceMethods
 
       if phonetized_definitions.nil?
         self.phonetized_definitions = {}
