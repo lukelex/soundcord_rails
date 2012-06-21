@@ -53,9 +53,8 @@ Or you can use migration generator: `rails generate soundcord_rails user name`
 
 ###To do:
 
-* Support for collection;
-* Support for phrases;
-* Alternate languages.
+* Add initializer options;
+* Search within database.
 
 ##How to contribute
 Please ensure that you provide appropriate test coverage and ensure the documentation is up-to-date. It is encouraged that you perform changes in a clean topic branch rather than a master and that you create a pull request for them. This will facilitate discussion and revision.
@@ -66,7 +65,7 @@ Please be clean, keep your commits atomic and with the smallest possible logical
 
 If you discover any bugs, feel free to create an issue on GitHub. Please add as much information as possible to help us fixing the possible bug.
 
-https://github.com/lukasalexandre/soundcord/issues
+https://github.com/lukasalexandre/soundcord_rails/issues
 
 ##License
 Copyright (c) 2012 Lukas Alexandre. http://www.devinscene.com.br/
