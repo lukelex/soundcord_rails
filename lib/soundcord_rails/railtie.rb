@@ -1,4 +1,5 @@
 require 'soundcord_rails'
+require 'soundcord_rails/glue'
 
 module SoundcordRails
   require 'rails'
