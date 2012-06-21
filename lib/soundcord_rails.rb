@@ -42,16 +42,12 @@ module SoundcordRails
   extend ProcessorHelpers
 
   module ClassMethods
-    # +phonetized+ gives the class, it is called on, an attribute that maps to a file. This
-    # is typically a file stored somewhere on the filesystem and has been uploaded by a user.
-    # The attribute returns a Paperclip::Attachment object which handles the management of
-    # that file. The intent is to make the attachment as much like a normal attribute. The
-    # thumbnails will be created when the new file is assigned, but they will *not* be saved
-    # until +save+ is called on the record. Likewise, if the attribute is set to +nil+ is
-    # called on it, the attachment will *not* be deleted until +save+ is called. See the
-    # Paperclip::Attachment documentation for more specifics. There are a number of options
+    # +phonetized+ gives the class, it is called on, an attribute that maps to the phonetized
+    # version of him self. The phonetized field will be automatically filled upon record +save+.
+    # Likewise, if the attribute is set to +nil+ is the phonetized field will *not* be deleted
+    # until +save+ is called.
     #
-    #   class Person
+    #   class Person < ActiveRecord::Base
     #     phonetized :name
     #   end
     def phonetized(name)
@@ -67,7 +63,7 @@ module SoundcordRails
       Paperclip.check_for_url_clash(name,phonetized_definitions[name][:url],self.name)
 
       define_method "update_#{name}_phonetized" do
-        send("#{name}_phonetized", send(name))
+        send("#{name}_phonetized", send(name).phonetize)
       end
 
       before_save "update_#{name}_phonetized"
