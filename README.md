@@ -26,14 +26,6 @@ gem "soundcord_rails", :git => "git@github.com:lukasalexandre/soundcord_rails.gi
 If you`are trying to use features that don't seem to be in the latest released gem, but are mentioned in the README, then you probably need to specify the master branch if you want to use them. This README is probably ahead of the  latest released version, if you're reading it on GitHub.
 
 ##Quick start
-In your model:
-
-```ruby
-Class User < ActiveRecord::Base
-  phonetized :name
-end
-```
-
 In your migrations:
 
 ```ruby
@@ -50,7 +42,15 @@ class addPhonetizedColumnsToUsers < ActiveRecord::Migration
 end
 ```
 
-Or you can use migration generator: `rails generate soundcord_rails user name`
+Or you can use migration generator: `rails generate soundcord_rails [model] [fields]`
+
+In your model:
+
+```ruby
+Class User < ActiveRecord::Base
+  phonetized :name
+end
+```
 
 ##Information
 
