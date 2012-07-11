@@ -17,7 +17,7 @@ Include the gem in you gemfile.
 gem "soundcord_rails"
 ```
 
-Or, if you want to get the latest, you can get master from the main soundcord_rails repository:
+Or, if you want to get the latest, you can get master from the main SoundCord Rails repository:
 
 ```
 gem "soundcord_rails", :git => "git@github.com:lukasalexandre/soundcord_rails.git"
