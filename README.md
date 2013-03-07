@@ -1,7 +1,5 @@
 #SoundCord Rails
 
-[![Build Status](https://secure.travis-ci.org/lukasalexandre/soundcord_rails.png)](http://travis-ci.org/lukasalexandre/soundcord)
-
 SoundCord Rails is intended as an easy phonetic engine for Active Record. The intent behind it was to keep setup, and dealing with it, as easy as possible and to treat phonetic database searchs as much like other attributes as possible. This means that the possible results for a query are maximized by the phonetic algorithm, even when the input has writing errors.
 
 The basics of soundcord_rails are quite simple: Declare that your model has a phonetic field with the `phonetized` method and give it a name.
