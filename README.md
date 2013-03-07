@@ -18,7 +18,7 @@ gem "soundcord_rails"
 Or, if you want to get the latest, you can get master from the main SoundCord Rails repository:
 
 ```
-gem "soundcord_rails", :git => "git@github.com:lukasalexandre/soundcord_rails.git"
+gem "soundcord_rails", :git => "git@github.com:lukelex/soundcord_rails.git"
 ```
 
 If you`are trying to use features that don't seem to be in the latest released gem, but are mentioned in the README, then you probably need to specify the master branch if you want to use them. This README is probably ahead of the  latest released version, if you're reading it on GitHub.
@@ -66,10 +66,10 @@ Please be clean, keep your commits atomic and with the smallest possible logical
 
 If you discover any bugs, feel free to create an issue on GitHub. Please add as much information as possible to help us fixing the possible bug.
 
-https://github.com/lukasalexandre/soundcord_rails/issues
+https://github.com/lukelex/soundcord_rails/issues
 
 ##License
-Copyright (c) 2012 Lukas Alexandre. http://www.devinscene.com.br/
+Copyright (c) 2012 Lukas Alexandre. http://codelogic.me/
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
